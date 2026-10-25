@@ -31,9 +31,9 @@ verification. The `WiFi-720P-*` SSID also appears in the older
 variant uses UDP port `50000`; the observed traffic here uses port `8090`.
 Similar SSIDs do not guarantee the same protocol variant.
 
-The packet capture may contain nearby network data, so it remains in the
-capture service and temporary analysis storage. Do not commit raw captures,
-unique device identifiers, or live control values.
+The packet capture may contain nearby network data. It remains in the capture
+service and is excluded from Git. Do not commit raw captures, unique device
+identifiers, or live control values.
 
 ## How the DJI Projects Inspected Their Link
 
