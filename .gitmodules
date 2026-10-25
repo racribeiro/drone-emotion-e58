@@ -1,0 +1,9 @@
+[submodule "other-projects/ESP_E58-Drone"]
+	path = other-projects/ESP_E58-Drone
+	url = https://github.com/martin-ger/ESP_E58-Drone.git
+[submodule "other-projects/e58-drone-reversing"]
+	path = other-projects/e58-drone-reversing
+	url = https://github.com/guillesanbri/e58-drone-reversing.git
+[submodule "other-projects/maritaca-e88-controller"]
+	path = other-projects/maritaca-e88-controller
+	url = https://github.com/popolony2k/maritaca-e88-controller.git
