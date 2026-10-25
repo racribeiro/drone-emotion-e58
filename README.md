@@ -35,22 +35,6 @@ The packet capture may contain nearby network data. It remains in the capture
 service and is excluded from Git. Do not commit raw captures, unique device
 identifiers, or live control values.
 
-## How the DJI Projects Inspected Their Link
-
-The sibling DJI research combines static analysis of the DJI Fly APK with
-offline decoding of app-visible packet captures. The capture review uses
-sanitized IP/UDP traces; raw captures are kept outside Git because they can
-contain Wi-Fi credentials and other private data. Its runtime integration joins
-the aircraft's access point, then sends and receives UDP datagrams through a
-host-owned socket. The documented Neo endpoint is `192.168.2.1:9003`, specific
-to that product.
-
-For this drone, the internal USB adapter's monitor capture exposed the target's
-clear UDP payloads directly. The 30-second survey ran through the Network
-Inspector API because this execution environment does not expose the radio as a
-local network interface. The target SSID suffix, BSSID, and control-axis values
-are omitted from this public-facing README.
-
 ## Reference Projects
 
 The Git submodules in [`other-projects/`](other-projects/) are:
